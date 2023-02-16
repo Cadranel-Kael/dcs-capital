@@ -19,7 +19,7 @@ $countries = [
     ],
 ];
 
+
+
 $country_names = array_keys($countries);
-
-
 require 'index.view.php';

@@ -28,6 +28,9 @@
             <h2><?= ucfirst($_GET['country']) ?></h2>
             <p>Capital: <?= ucfirst($countries[$_GET['country']]['capital_name']) ?></p>
             <img src="./images/<?= $countries[$_GET['country']]['flag_file'] ?>" alt="Flag of <?= ucfirst($_GET['country']) ?>">
+        <?php elseif ($_GET['country'] === ""):?>
+        <?php else:?>
+            <p>Country not found...</p>
         <?php endif; ?>
     </article>
 </body>
